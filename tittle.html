@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <title>摄图网-正版摄影图片免费下载</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">  
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body style="min-width: 1200px;">  
+<div id="header" style="position:static;style="background:#000;"">
+    <div class="head clearfix">
+        <div class="logo fl">
+            <a href="" title="返回摄图网首页"></a>
+        </div>
+        <div class="nav fl clearfix">
+            <div class="nav-list fl ">
+                <a href="" class="nav-link pc-click">分类</a>
+                <a href="#classify" class="wap-touch nav-link">分类</a>
+                <div class="nav-m clearfix tran">
+                                <a href="">人物</a>
+                                <a href="">自然/风景</a>                            
+                                <a href="">地点/地标</a>                            
+                                <a href="">食品/饮料</a>                            
+                                <a href="">旅游/度假</a>                            
+                                <a href="">交通/运输</a>                            
+                                <a href="">动物</a>                            
+                                <a href="">建筑</a>                            
+                                <a href="">背景/素材</a>                            
+                                <a href="">美容/时尚</a>                            
+                                <a href="">商业/金融</a>                            
+                                <a href="">计算机/通信</a>                            
+                                <a href="" >教育</a>                            
+                                <a href="">情感</a>                            
+                                <a href="">健康/医疗</a>
+								<a href="">行业/工艺</a>                            
+								<a href="">音乐</a>                            
+								<a href="">科学/技术</a>                            
+								<a href="">汽车</a>                            
+								<a href="">军队/武器</a>
+								<a href="">花草树木</a>                            
+								<a href="">游戏与卡通</a>                            
+								<a href="">假日和节日</a>                            
+								<a href="">室内设计</a>                            
+								<a href="">标记与标志</a>                            
+								<a href="">艺术与设计</a>                            
+								<a href="">宗教</a>                            
+								<a href="">体育</a>                            
+								<a href="">其它</a>                    
+								<a href="" class="color-green">视频<i></i></a>
+                    			<a href="">近期更新</a>
+                    			<a href=""class="color-red">热门专题<i></i></a>
+                </div>
+            </div>
+            <div class="nav-list fl ">
+                <a href="index.html"class="nav-link" >精品</a>
+            </div>
+            <div class="nav-list fl ">
+                 <a href="#"class="nav-link" rel="nofollow">个人VIP</a>
+            </div>
+
+            <div class="nav-list fl ">
+                <a href="rend.html" class="nav-link" rel="nofollow">版权保障</a>
+            </div>
+            <div class="nav-list fl ">
+                <a href="download.html" class="nav-link" target="_blank" rel="nofollow">企业VIP</a>
+                <!--企业VIP下拉-->
+                <div class="nav-compDropbox tran">
+                     <a href="" target="_blank" class="lj-openBtn drop_click">立即开通</a>
+                </div>
+            </div>
+            <span class="cssarrow">5折</span>
+            
+            <div class="nav-list fl">
+                <a href="" class="nav-link pc-click">摄影师</a>
+                <a href="" class="wap-touch nav-link">摄影师</a>
+                <div class="nav-m clearfix tran more">
+                    <a href="" class="nav-link" target="_blank">摄影师排行</a>
+                    <a href="" class="nav-link" target="_blank">摄影师</a>
+                    <a href="" class="nav-link" target="_blank">接单摄影师</a>
+                    <a href="" class="nav-link" target="_blank">接单介绍</a> 
+                </div>
+            </div>
+
+            <div class="nav-list fl">
+                <a href="" class="nav-link pc-click">活动</a>
+                <a href="" class="wap-touch nav-link">活动</a>
+                <div class="nav-m clearfix tran more">
+                    <a href="" class="nav-link" target="_blank" rel="nofollow">征图比赛</a> 
+                    <a href="" class="nav-link" target="_blank" rel="nofollow">致匠心</a>
+                    <a href="" class="nav-link" target="_blank" rel="nofollow">VIP活动</a>
+                    <a href="" class="nav-link" target="_blank" rel="nofollow">更多活动</a>
+                </div>
+            </div>
+        </div>
+		<div class="login fr">
+            <a class="register" style="width:100px;" rel="nofollow">注册</a>
+            <a class="in" rel="nofollow">登录</a>
+         </div>	
+    </div>
+</div>
+ <div id="wrapper">
+
+        <div class="sea-search">
+    <div class="sea-m">
+        <a href="/"><div class="sea-logo fl"></div></a>
+
+        <div class="btn-select-search fl" id="pic_index_search">
+            <div class="current-select"><span id="pic_current_search_type">全部作品</span><i></i></div>
+            <div class="select-list" id="pic_search_type_table">
+                <div id="pic_search_type_list">
+                    <a pic-click-type="search_type" pic-search-type="all" href="javascript:void(0);">全部作品</a>
+                    <a pic-click-type="search_type" pic-search-type="photo" href="javascript:void(0);">摄影图</a>
+                    <a pic-click-type="search_type" pic-search-type="vector" href="javascript:void(0);">矢量图</a>
+                    <a pic-click-type="search_type" pic-search-type="video" href="javascript:void(0);">视频</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sea-search-m fl search-m">
+
+            <form id="searchform">
+                <input type="hidden" id="pic_form_search_model" name="search_mode" value="all"/>
+                <input type="text" class="text fl" name="kw" id="searchinput" placeholder="输入关键字搜索图片" value="" AUTOCOMPLETE="OFF">
+                <input type="submit" class="but fl tran" id="searchbtn" value="搜 索">
+            </form>
+
+            <div pic-click-type="sug-list" class="search-sug">
+            </div>
+
+        </div>
+
+   
+        <div class="num fr">共<span>5580</span>个作品</div>
+    </div>
+</div>
+
+        <div class="sea-nav">
+            <div class="sea-nav-m">
+                <div class="filter clearfix">
+                    <div class="row-list fl">
+                        <div class="row-list-t">
+                            排序<i></i>
+                        </div>
+                        <div class="row-list-m new-filter-order">
+                            <a class='alink on' href="/video-sousuo-0-0-1-all-complex.html">综合</a>
+                            <a class='alink ' href="/video-sousuo-0-0-1-all-new.html">最新</a>
+                            <a class='alink ' href="/video-sousuo-0-0-1-all-popular.html">最受欢迎</a>
+                        </div>
+                    </div>
+                    <div class="row-list fl">
+                        <div class="row-list-t">
+                            分辨率<i></i>
+                        </div>
+                        <div class="row-list-m new-filter-direction">
+                            <a class='alink on' href="/video-sousuo-0-0-1-all-complex.html">所有</a>
+                            <a class='alink ' href="/video-sousuo-0-0-1-720p-complex.html">标清720P</a>
+                            <a class='alink ' href="/video-sousuo-0-0-1-1080p-complex.html">高清1080P</a>
+                            <a class='alink ' href="/video-sousuo-0-0-1-2160p-complex.html">超清2160P</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 视频 start -->
+        <div class="vedioshow clearfix">
+            <div class="swipeboxEx">
+                <div class="video-list fl">
+                        <a target="_blank" href="/video-3807.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/5b4b8228-e693-4280-9c21-49cba178ae44.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">超慢运动中的雨滴</a> - <span class="video-time">00:59</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3807" video-op-value="http://699pic.com/download/video?id=3807&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-40.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/02/893d03a3-c7b1-4c62-adce-a5a4fdb4aac1.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">城市</a> - <span class="video-time">00:28</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="40" video-op-value="http://699pic.com/download/video?id=40&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-751.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/02/42e5f651-a83f-4fb8-8bb9-64197dc5737d.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">谢谢你</a> - <span class="video-time">00:08</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="751" video-op-value="http://699pic.com/download/video?id=751&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-4140.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/cf519250-f733-4bdd-bf8d-d66b62122432.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">银河系</a> - <span class="video-time">00:53</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="4140" video-op-value="http://699pic.com/download/video?id=4140&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-3294.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/18/aa475bde-a707-48d9-b9b5-c0c64cd0a86b.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">秋天的树叶2</a> - <span class="video-time">00:05</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3294" video-op-value="http://699pic.com/download/video?id=3294&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-4084.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/9c499ca2-1bd9-4561-b404-c58099af03e8.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">时间流逝：白天到夜晚的城市</a> - <span class="video-time">00:15</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="4084" video-op-value="http://699pic.com/download/video?id=4084&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-351.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/02/aa1b88ed-ade4-4286-9d5e-d7dd4f235bf8.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">地球</a> - <span class="video-time">00:20</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="351" video-op-value="http://699pic.com/download/video?id=351&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-1132.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/02/a471517d-5c6e-4461-976a-97f7ed06ba20.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">倒计时</a> - <span class="video-time">00:07</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="1132" video-op-value="http://699pic.com/download/video?id=1132&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-2531.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/05/14c2e3e9-9594-4638-862d-d5b313922b42.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">城市</a> - <span class="video-time">01:15</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="2531" video-op-value="http://699pic.com/download/video?id=2531&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-739.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/02/ca9ec254-9999-405b-b5b2-7694342a9d62.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">工作空间</a> - <span class="video-time">00:33</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="739" video-op-value="http://699pic.com/download/video?id=739&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-3510.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/18/85ca00dc-7e57-422c-841a-5a1606ef2271.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">云尕UHD</a> - <span class="video-time">00:12</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3510" video-op-value="http://699pic.com/download/video?id=3510&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-3984.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/7cfa0998-4838-4573-a981-fce37f5d5c61.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">银河延时</a> - <span class="video-time">00:05</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3984" video-op-value="http://699pic.com/download/video?id=3984&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-3324.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/18/00d05b56-9e27-47ef-b6d9-48be306e31ed.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">秋天的树叶7</a> - <span class="video-time">00:15</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3324" video-op-value="http://699pic.com/download/video?id=3324&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-2439.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/05/de83d85f-7e0f-4566-965d-28eab3a92d1b.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">城市</a> - <span class="video-time">00:15</span> </div>
+                            <a href=""><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-5153.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/69a00866-a4a7-46ce-979b-6b372815085a.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">黄色抽象运动背景1562</a> - <span class="video-time">00:10</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="5153" video-op-value="http://699pic.com/download/video?id=5153&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-2830.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/05/57c1e1be-37c8-47e1-a4d9-75726a929b41.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">世界</a> - <span class="video-time">00:30</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="2830" video-op-value="http://699pic.com/download/video?id=2830&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-4679.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/f2330cfe-df2a-44c4-abcd-6ed13da9ab78.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">交通从焦点的背景虚化背景</a> - <span class="video-time">00:16</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="4679" video-op-value="http://699pic.com/download/video?id=4679&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-4528.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/29b386bc-0d58-4ebb-8d32-c03196d522f2.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">墨水流03 - 2部分</a> - <span class="video-time">00:25</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="4528" video-op-value="http://699pic.com/download/video?id=4528&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-1651.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/03/bf363a24-92ad-412d-b33f-422a1dcd0751.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">文库</a> - <span class="video-time">00:12</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="1651" video-op-value="http://699pic.com/download/video?id=1651&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-5501.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/1f6836e0-7b53-4e1c-9959-c0150cb2664b.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">胶片卷轴背景4</a> - <span class="video-time">00:09</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="5501" video-op-value="http://699pic.com/download/video?id=5501&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-3660.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/18/9e1d06a6-2e0a-4e29-bafc-027e808dbdbc.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">步行穿过大麦田</a> - <span class="video-time">00:29</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3660" video-op-value="http://699pic.com/download/video?id=3660&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-3161.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/18/36325a23-b165-4dab-8fd4-61b85156aff1.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">自行车的夕阳剪影</a> - <span class="video-time">00:11</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="3161" video-op-value="http://699pic.com/download/video?id=3161&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-2887.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/18/28dcf7a2-1082-4c71-977c-a1d2a707b852.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">使用智能手机的同时阅读纸</a> - <span class="video-time">00:11</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="2887" video-op-value="http://699pic.com/download/video?id=2887&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-4021.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/19/2368f97f-44b5-490b-b45a-267ed4b212d1.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">地球缩小</a> - <span class="video-time">00:10</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="4021" video-op-value="http://699pic.com/download/video?id=4021&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div><div class="video-list fl">
+                        <a target="_blank" href="/video-2022.html">
+                            <div class="video-box" style=" background:url(http://img95.699pic.com/videos_thumbnail/2016/09/05/54ea09bd-2a16-4bf7-b2d2-525486f9e855.jpg); background-size: cover" >
+                                <div class="box-mask"></div>
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                        <div class="video-icon clearfix">
+                            <div class="video-name fl"><a href="">日落</a> - <span class="video-time">00:23</span> </div>
+                            <a href="javascript:void(0);" video-op-type="download-video" video-op-id="2022" video-op-value="http://699pic.com/download/video?id=2022&fromSearch=1"><div class="icon-download fr"><i></i>下载</div></a>
+                        </div>
+                    </div>            </div>
+        </div>
+        <!-- 视频 end -->
+
+        <div class="pagelist" style="margin: 20px 0;">
+            <div class=pager-linkPage>  <a  href='javascript:void(0);' class='current' >1</a>  <a href='/video-sousuo-0-0-2.html'>2</a>  <a href='/video-sousuo-0-0-3.html'>3</a>  <a href='/video-sousuo-0-0-4.html'>4</a>  <a href='/video-sousuo-0-0-5.html'>5</a>  <a href='/video-sousuo-0-0-6.html'>6</a>  <a href='/video-sousuo-0-0-7.html'>7</a>  <a href='/video-sousuo-0-0-8.html'>8</a> <span>…</span> <a href='/video-sousuo-0-0-224.html'>224</a> </div><a href='/video-sousuo-0-0-2.html' class=downPage >下一页</a>        </div>
+
+    </div>
+
+<div id="footer">
+    <div class="foot">
+        <p style="font-size: 14px; margin-bottom: 0; color: #ccc; margin-top: 5px;">
+            摄图网，为您提供免费正版摄影图，免除版权困扰
+        </p>
+        <div style="position: relative;">
+            <span class="copyright">
+                Copyright &copy; 2015摄图网 沪ICP备15050430号， 用时：0.0393 <span class='load_time'></span> 秒
+            </span>
+            <a href="" target="_blank"
+               title="实名认证" rel="nofollow">
+                <img src="http://static.699pic.com/images/footer-sm_83x30.png" alt="实名认证" title="实名认证" />
+            </a>
+            <a href="" target="_blank"
+               title="电子营业执照" rel="nofollow">
+                <img src="http://static.699pic.com/images/shgs.jpg" height="30" alt="电子营业执照"
+                     style="position: absolute; top: 3px; margin-left: 10px;" title="电子营业执照" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--侧边栏-->
+<div id='fixed-nversion'>
+    <!--侧边悬浮样式修正-->
+    <style type="text/css">
+        #fixed-nversion{border: none;  z-index: 99999;  }
+        #fixed-nversion .fixed-item{  border: 1px solid #d8dce0;  margin-bottom: -3px;  }
+        #fixed-nversion .fixed-item.qq-sever{  border-top: 1px solid #D8DCE0;  }
+        #fixed-nversion .getVipEter a{  display: block;  width: 58px;  height: 99px;
+            background: url(http://static.699pic.com/images/vip-enter.gif) no-repeat center;  margin-bottom: 10px;  }
+        #fixed-nversion .lighten a {  display: block;  width: 58px;  height: 99px;
+            background: url(http://static.699pic.com/images/lighten-sidebar.png) no-repeat center;  }
+
+    </style>
+    <div class="getVipEter">
+        <a href="" target="_blank"></a>
+    </div>
+    <div class="qq-sever fixed-item">
+        <div class="sever-m tran">
+            <div class="sm-top sm-cont">
+                <p>咨询客服QQ:</p>
+                <P>800053384 <a href="" target="_blank"></a></P>
+            </div>
+            <div style="height:64px;" class="sm-butm sm-cont">
+                <p>09:00~12:00（周一~周五）</p>
+                <p>13:00~18:00（周一~周五）</p>
+            </div>
+        </div>
+    </div>
+    <div class="record fixed-item">
+        <a href="" target="_blank"></a>
+    </div>
+    <div class="idea fixed-item"></div>
+    <div class="gotop fixed-item" style="display: none;"></div>
+</div>
+
+
+    
+<script type="text/javascript">
+	$(function() {
+        //右侧悬浮按钮触发的JS
+        //意见反馈弹窗
+        $('#fixed-nversion .idea').on('click',function(){
+            $('.ideaBack-win').fadeIn();
+        });
+        $('#fixed-nversion .record').on('click',function(){
+            window.open('http://699pic.com/community/download');
+        });
+
+        //返回顶部
+        //点击回到顶部的元素
+        $("#fixed-nversion .gotop").click(function(e) {
+            $('body,html').animate({scrollTop:0},500);
+        });
+
+        //回到顶部元素的渐显与渐隐
+        $(window).scroll(function(e) {
+            //若滚动条离顶部大于100元素
+            if($(window).scrollTop()>100)
+                $("#fixed-nversion .gotop").fadeIn(200);
+            else
+                $("#fixed-nversion .gotop").fadeOut(200);
+        });
+    });
+</script>
+
+</body>
+</html>

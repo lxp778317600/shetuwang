@@ -1,0 +1,184 @@
+.st-lregwin{position:fixed;width: 100%;height:100%;top:0;left:0;right: 0;bottom: 0; background: rgba(0,0,0,.6);z-index: 999;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+}
+.st-lregwin .mask-table{
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.st-lregwin   .mask-table-cell{
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    padding: 50px;
+}
+.st-lregwin .frame-box{width: 580px; max-width: 800px; background: #fff;    -webkit-border-radius:4px;  -moz-border-radius:4px;  border-radius:4px;
+    -webkit-box-shadow:  1px 1px 50px rgba(0,0,0,.3);
+    -moz-box-shadow:  1px 1px 50px rgba(0,0,0,.3);
+    box-shadow:  1px 1px 50px rgba(0,0,0,.3);
+    -webkit-animation:winAlertIn .4s;
+    -o-animation:winAlertIn .4s;
+    animation:winAlertIn .4s;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+.st-lregwin .frame-box .close-btn{width: 16px;height: 16px;background: url(../images/lreg-icons.png) no-repeat -194px 0;display: block;  position:absolute;  right:20px;  top:20px;  cursor:pointer;  }
+.st-lregwin .frame-box .box-center{width: 330px;margin:  0 auto;overflow: hidden;}
+.st-lregwin .frame-box .box-logo{width: 127px;height: 28px;display: block;background:url(../images/lreg-icons.png) no-repeat 0 0;margin:30px auto;}
+/*划线标题*/
+.st-lregwin .frame-box .box-linetit{text-align:center;font-size: 14px;color:#999;position: relative;overflow: hidden;}
+.st-lregwin .frame-box .box-linetit:before,.st-lregwin .frame-box .box-linetit:after{  content: '';  height: 1px;  width: 51px;  background: #ededed;  position: absolute;  top:50%;  }
+.st-lregwin .frame-box .box-linetit:before{left: 0;}
+.st-lregwin .frame-box .box-linetit:after{right: 0;}
+/*qq微信登录注册*/
+.st-lregwin .frame-box .box-work{margin: 35px 0 30px;text-align: center;overflow: hidden;}
+.st-lregwin .frame-box .box-work dl{display: inline-block;text-align: center;margin: 0 24px;}
+.st-lregwin .frame-box .box-work dl dt i{display: inline-block;width: 76px;height: 76px;background:url(../images/lreg-icons.png) no-repeat;}
+.st-lregwin .frame-box .box-work dl dt .qq-icon{background-position: 0 -33px;}
+.st-lregwin .frame-box .box-work dl dt .qq-icon:hover{background-position: 0 -118px;}
+.st-lregwin .frame-box .box-work dl dt .wx-icon{background-position: -83px -33px;}
+.st-lregwin .frame-box .box-work dl dt .wx-icon:hover{background-position: -83px -118px;}
+.st-lregwin .frame-box .box-work dl dd{font-size: 14px;line-height: 22px;margin-top:3px;}
+.st-lregwin .frame-box .box-work dl .qq-tit{color: #2a9cd5;}
+.st-lregwin .frame-box .box-work dl .wx-tit{color: #51c332;}
+/*底部跳转提示信息*/
+.st-lregwin .frame-box .take-phoneregsit{margin-bottom:  10px;text-align: center;line-height: 22px;}
+.st-lregwin .frame-box .take-phoneregsit a{font-size: 14px;color: #999;}
+.st-lregwin .frame-box .take-phoneregsit a:hover{font-size: 14px;color: #2a9cd5;}
+.st-lregwin .frame-box .box-butm{padding: 0 16px;height: 43px;line-height: 42px;background-color:#f7f8fa;}
+.st-lregwin .frame-box .box-butm span{font-size: 14px;color: #999;}
+.st-lregwin .frame-box .box-butm span em,.st-lregwin .frame-box .box-butm span a{color:#0099e5;font-style: normal;font-weight: normal;}
+/*头部标题栏*/
+.st-lregwin .frame-box .frame-toptit{padding: 16px 15px 8px;border:1px solid #ececec;  -webkit-border-radius:4px 4px 0 0;  -moz-border-radius:4px 4px 0 0;  border-radius:4px 4px 0 0 ;}
+.st-lregwin .frame-box .frame-toptit span{font-size: 18px;color:#444;}
+/*提示语句*/
+.st-lregwin .frame-box .fd-tips{font-size: 14px;color:#777;line-height: 28px;position: relative;min-width: 300px;}
+.st-lregwin .frame-box .fd-tips .tip-icon{display: inline-block;width: 16px;height: 16px;background: url(../images/lreg-icons.png) no-repeat;vertical-align: -3px;margin-right: 5px;}
+.st-lregwin .frame-box .fd-tips .warning-icon{background-position: -133px 0;}
+.st-lregwin .frame-box .fd-tips .success-icon{background-position: -153px 0;}
+.st-lregwin .frame-box .fd-tips .error-icon{background-position: -173px 0;}
+/*手机认证部分表单*/
+
+.st-lregwin .frame-box .form-cont .sure-btn{display:block;height: 36px;line-height: 36px;text-align: center;color:#666;font-size: 16px;background: #ededed;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;}
+.st-lregwin .frame-box .form-cont label{display:block;position: relative;margin-bottom: 32px; }
+.st-lregwin .frame-box .form-cont label .form-put{height: 34px;border:1px solid #d8dce0;  padding-left:10px;  color:#6c6c6c;  -webkit-border-radius: 2px;  -moz-border-radius: 2px;  border-radius: 2px;}
+.st-lregwin .frame-box .form-cont .sure-btn.sure-success{color:#fff;background: #269edc;}
+.st-lregwin .frame-box .form-cont .fd-tips{position: absolute;left: 0;bottom: -30px;}
+.st-lregwin .frame-box .phonelreg-box{width: 180px;margin: 28px auto 34px;}
+.st-lregwin .frame-box .phonelreg-box .form-put{width: 168px;}
+
+.st-lregwin .frame-box .phonelreg-box label span{position: absolute;width: 100px;text-align: right;left: -120px;top:0;color: #6c6c6c;height: 36px;line-height: 36px;}
+.st-lregwin .frame-box .phonelreg-box label .sendma-btn{display: block;position: absolute;right: -138px;top:0; width: 118px;height: 34px;border: 1px solid #d8dce0;line-height: 34px;text-align: center;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffffff',endColorStr='#f4f4f4',gradientType=0);
+    background: -moz-linear-gradient(top, #ffffff, #f4f4f4);
+    background: -o-linear-gradient(top,#ffffff, #f4f4f4);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f4f4f4));
+}
+.st-lregwin .frame-box .phonelreg-box label .sendma-btn.actived{ filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ededed',endColorStr='#ededed',gradientType=0);}
+.st-lregwin .frame-box .phonelreg-box .sure-btn{width: 180px;}
+
+/*手机登录*/
+.st-lregwin .frame-box .phone-loginbox{padding: 15px 0 32px;}
+.st-lregwin .frame-box .phone-loginbox label{margin-bottom: 8px;}
+.st-lregwin .frame-box .phone-loginbox label .form-put{width: 318px;}
+.st-lregwin .frame-box .phone-loginbox .take-phoneregsit{position: absolute;right: 0;bottom:-36px;z-index: 1;}
+
+
+/*注册成功，验证成功，密码设置成功提示*/
+
+
+/*动画类*/
+.winAlertIn{
+    -webkit-animation-name: winAlertIn;
+    -moz-animation-name: winAlertIn;
+    -o-animation-name: winAlertIn;
+    animation-name: winAlertIn;
+    -webkit-animation-duration: .4s;
+    -moz-animation-duration: .4s;
+    -o-animation-duration: .4s;
+    animation-duration: .4s;
+}
+
+@-webkit-keyframes winAlertIn{
+    0% {
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+        -o-transform: scale(.7);
+        transform: scale(.7);
+    }
+
+    45% {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+
+    }
+    80% {
+
+
+        -webkit-transform: scale(.95);
+        -moz-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -o-transform: scale(.95);
+        transform: scale(.95);
+
+    }
+    100% {
+
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes winAlertIn{
+    0% {
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        -ms-transform: scale(.7);
+        -o-transform: scale(.7);
+        transform: scale(.7);
+    }
+
+    45% {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+
+    }
+    80% {
+
+
+        -webkit-transform: scale(.95);
+        -moz-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -o-transform: scale(.95);
+        transform: scale(.95);
+
+    }
+    100% {
+
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
